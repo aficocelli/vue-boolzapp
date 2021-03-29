@@ -7,13 +7,14 @@
 body{
   font-family: 'Lato', sans-serif;
 }
-
+.flex-el{
+  display:flex;
+}
 /* /MIX */
 
 /* layout container and main box */
 .container{
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -22,7 +23,7 @@ body{
   background-color: red;
   height:90%;
   min-width:900px;
-  display:flex;
+
 }
 /* /layout container and main box */
 
@@ -53,3 +54,68 @@ body{
   overflow: auto;
 }
 /* /user box and contacts box layout */
+
+/* user layout */
+.user{
+  justify-content:space-between;
+  padding:10px;
+}
+/* /user layout */
+
+/* img user + name */
+.img-user{
+
+  align-items: center;
+}
+.img-user img{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  padding:5px;
+}
+.img-user h1{
+  font-size:18px;
+}
+/* /img user + name */
+
+/* main icons */
+.main-icons{
+  display:flex;
+  align-items:center;
+}
+.main-icons ul{
+  list-style-type: none;
+}
+.main-icons ul li:not(:last-of-type){
+  margin-right:15px;
+}
+/* /main icons */
+
+/* notifications */
+.notifications{
+  align-items:center;
+  padding:10px;
+}
+.bell-icon{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  background-color:#fff;
+  justify-content:center;
+  align-items:center;
+  margin-right:10px;
+}
+.bell-icon i{
+  font-size:20px;
+}
+.bell-text h2{
+  font-size:16px;
+}
+.bell-text a{
+  font-size:14px;
+}
+/* /notifications */
+
+/* chat-search */
+
+/* /chat-search */
