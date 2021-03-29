@@ -180,6 +180,10 @@ body{
   padding: 8px 15px;
   border-top: 0.5px solid #EAEAEA;
 }
+.mex-section .user{
+  padding-right:20px;
+  border-left:1px solid lightgrey;
+}
 .mex-section .user .img-user img{
   vertical-align: top;
 }
@@ -194,15 +198,31 @@ body{
 
 /* text mex section */
 .text-mex{
-  height:calc(100% - 120px);
+  height:calc(100% - 105px);
   background-image: url("../img/mine.jpg");
   background-size: 60%;
+  overflow-y: scroll;
 }
 /* /text mex section */
 
 /* input footer */
 .input-footer{
-  height:60px;
-  background-color:red;
+  height:45px;
+  justify-content: space-evenly;
+  align-items:center;
+  background-color:#F3EEEA;
+}
+.input-footer input{
+  width:75%;
+  height:80%;
+  border-radius:5px;
+  border-style:none;
+  padding:10px;
+}
+.input-footer i{
+  color:#6B7376;
+}
+.input-footer input::placeholder{
+  color:#6B7376;
 }
 /* /input footer */
