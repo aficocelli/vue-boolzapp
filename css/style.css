@@ -47,13 +47,14 @@ body{
 
 /* user box and contacts box layout */
 .user-box{
-
+  height:31%;
   border:1px solid black;
 }
 .contacts-box{
-
   border:1px solid black;
-  overflow: auto;
+  height:69%;
+  overflow-y:scroll;
+  width:100%;
 }
 /* /user box and contacts box layout */
 
@@ -61,6 +62,7 @@ body{
 .user{
   justify-content:space-between;
   padding:5px;
+  overflow:hidden;
 }
 /* /user layout */
 
@@ -157,3 +159,18 @@ body{
   color:lightgrey;
 }
 /* /chat-search */
+
+/* contacts box */
+.contacts-box{
+  background-color:#fff;
+}
+.contacts-box li img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+.contacts-box li{
+  padding: 8px 15px;
+}
+/* /contacts box */
