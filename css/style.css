@@ -39,3 +39,17 @@ body{
   width:60%;
 }
 /* list section layout and messages section */
+
+/* user box and contacts box layout */
+.user-box{
+  height:30%;
+  background-color: green;
+  border:1px solid black;
+}
+.contacts-box{
+  height:70%;
+  background-color: green;
+  border:1px solid black;
+  overflow: auto;
+}
+/* /user box and contacts box layout */
