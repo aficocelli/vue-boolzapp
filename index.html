@@ -92,7 +92,7 @@
           <!-- contacts box -->
           <div class="contacts-box">
             <ul>
-              <li @click="mexSelector" v-for="(item, index) in contacts">
+              <li @click="indexContact = index" v-for="(item, index) in contacts">
                 <img :src=" 'img/avatar' + contacts[index].avatar + '.jpg'" alt="user photo">
                 <span>{{contacts[index].name}}</span>
               </li>
@@ -122,9 +122,9 @@
           <div class="user flex-el grey-high-icons">
             <!-- avatar + name -->
             <div class="img-user flex-el">
-              <img src="img/avatar_1.jpg" alt="contact avatar">
+              <img :src=" 'img/avatar' + contacts[indexContact].avatar + '.jpg'" alt="contact avatar">
               <div class="name-text">
-                <p>Michele</p>
+                <p>{{contacts[indexContact].name}}</p>
                 <p>Ultimo accesso oggi alle</p>
               </div>
             </div>

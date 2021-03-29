@@ -86,7 +86,9 @@ var app = new Vue ({
                 }
             ],
         },
-    ]
+    ],
+
+    indexContact: 0
 
 
 
@@ -96,9 +98,10 @@ var app = new Vue ({
 
     mexSelector: function() {
 
-      console.log(this.contacts[0].avatar);
+
 
     },
+
 
 
 

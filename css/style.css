@@ -189,6 +189,7 @@ body{
 .contacts-box li{
   padding: 8px 15px;
   border-top: 0.5px solid #EAEAEA;
+  cursor: pointer;
 }
 .mex-section .user{
   padding-right:20px;
