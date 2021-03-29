@@ -25,7 +25,7 @@
     <div class="container flex-el">
 
       <!-- main box -->
-      <div class="main-box flex-el">
+      <div class="main-box flex-el" id="root">
 
         <!-- list contact section -->
         <div class="list-section">
@@ -92,11 +92,11 @@
           <!-- contacts box -->
           <div class="contacts-box">
             <ul>
-              <li class="active">
+              <li @click="mexSelector" v-for="(item, index) in contacts">
                 <img src="img/avatar_1.jpg" alt="user photo">
-                <span>Michele</span>
+                <span>{{contacts[index].name}}</span>
               </li>
-              <li>
+              <!-- <li>
                 <img src="img/avatar_2.jpg" alt="user photo">
                 <span>Fabio</span>
               </li>
@@ -107,7 +107,7 @@
               <li>
                 <img src="img/avatar_4.jpg" alt="user photo">
                 <span>Luisa</span>
-              </li>
+              </li> -->
             </ul>
           </div>
           <!-- contacts box -->
