@@ -43,12 +43,12 @@ body{
 
 /* user box and contacts box layout */
 .user-box{
-  height:30%;
+
   background-color: green;
   border:1px solid black;
 }
 .contacts-box{
-  height:70%;
+
   background-color: green;
   border:1px solid black;
   overflow: auto;
@@ -117,5 +117,28 @@ body{
 /* /notifications */
 
 /* chat-search */
+.chat-search{
+  padding:5px;
 
+}
+.chat-search label{
+  align-items: center;
+}
+.chat-search i{
+
+}
+.search-box{
+  height:30px;
+  background-color:#fff;
+  width:20%;
+  text-align:center;
+  line-height:30px;
+  border-right:0.5px solid lightgrey;
+}
+.chat-search input{
+  width:80%;
+  padding: 5px;
+  height:30px;
+  border:none;
+}
 /* /chat-search */
