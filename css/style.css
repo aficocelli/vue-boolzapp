@@ -225,6 +225,7 @@ body{
   min-height:50px;
   display:flex;
   align-items:center;
+  font-size:14px;
 }
 .data-mex{
   font-size:10px;
