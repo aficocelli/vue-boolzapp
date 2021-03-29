@@ -22,5 +22,20 @@ body{
   background-color: red;
   height:90%;
   min-width:900px;
+  display:flex;
 }
 /* /layout container and main box */
+
+/* list section layout and messages section */
+.list-section, .mex-section{
+  height:100%;
+  background-color: yellow;
+  border:1px solid black;
+}
+.list-section{
+  width:40%;
+}
+.mex-section{
+  width:60%;
+}
+/* list section layout and messages section */
