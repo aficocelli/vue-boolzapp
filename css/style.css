@@ -14,6 +14,17 @@ body{
 .grey-high-icons{
   background-color: #EAEAEA;
 }
+.active{
+  background-color: #E9EBEB;
+}
+.send-mex{
+  background-color: #D5F9BA;
+  align-self:flex-end;
+}
+.received-mex{
+  background-color:#fff;
+  align-self:flex-start;
+}
 /* /MIX */
 
 /* layout container and main box */
@@ -27,8 +38,7 @@ body{
 
 .main-box{
   height:90%;
-  min-width:900px;
-
+  min-width:1070px;
 }
 /* /layout container and main box */
 
@@ -37,10 +47,10 @@ body{
   height:100%;
 }
 .list-section{
-  width:40%;
+  width:30%;
 }
 .mex-section{
-  width:60%;
+  width:70%;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -202,6 +212,26 @@ body{
   background-image: url("../img/mine.jpg");
   background-size: 60%;
   overflow-y: scroll;
+  flex-direction:column;
+  padding:50px;
+
+}
+.speech-balloon{
+  padding:5px;
+  border-radius:10px;
+  width:45%;
+  margin: 5px 0;
+  position:relative;
+  min-height:50px;
+  display:flex;
+  align-items:center;
+}
+.data-mex{
+  font-size:10px;
+  position:absolute;
+  bottom: 2px;
+  right: 10px;
+  color:#c5c5c5;
 }
 /* /text mex section */
 
