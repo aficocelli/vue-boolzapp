@@ -10,6 +10,10 @@ body{
 .flex-el{
   display:flex;
 }
+
+.grey-high-icons{
+  background-color: #EAEAEA;
+}
 /* /MIX */
 
 /* layout container and main box */
@@ -44,12 +48,10 @@ body{
 /* user box and contacts box layout */
 .user-box{
 
-  background-color: green;
   border:1px solid black;
 }
 .contacts-box{
 
-  background-color: green;
   border:1px solid black;
   overflow: auto;
 }
@@ -58,7 +60,7 @@ body{
 /* user layout */
 .user{
   justify-content:space-between;
-  padding:10px;
+  padding:5px;
 }
 /* /user layout */
 
@@ -89,12 +91,16 @@ body{
 .main-icons ul li:not(:last-of-type){
   margin-right:15px;
 }
+.main-icons ul li a{
+  color:#B1B1B1;
+}
 /* /main icons */
 
 /* notifications */
 .notifications{
   align-items:center;
   padding:10px;
+  background-color: #8EDAFC;
 }
 .bell-icon{
   height:50px;
@@ -108,24 +114,29 @@ body{
 .bell-icon i{
   font-size:20px;
 }
+.bell-icon a{
+  color:#8EDAFC;
+}
 .bell-text h2{
   font-size:16px;
 }
 .bell-text a{
   font-size:14px;
+  color:#6395AC;
 }
 /* /notifications */
 
 /* chat-search */
 .chat-search{
   padding:5px;
+  background-color: #FAFAFA;
 
 }
 .chat-search label{
   align-items: center;
 }
 .chat-search i{
-
+  color:lightgrey;
 }
 .search-box{
   height:30px;
@@ -140,5 +151,9 @@ body{
   padding: 5px;
   height:30px;
   border:none;
+
+}
+.chat-search ::placeholder{
+  color:lightgrey;
 }
 /* /chat-search */
