@@ -93,7 +93,7 @@
           <div class="contacts-box">
             <ul>
               <li @click="mexSelector" v-for="(item, index) in contacts">
-                <img src="img/avatar_1.jpg" alt="user photo">
+                <img :src=" 'img/avatar' + contacts[index].avatar + '.jpg'" alt="user photo">
                 <span>{{contacts[index].name}}</span>
               </li>
               <!-- <li>
