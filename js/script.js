@@ -116,6 +116,8 @@ var app = new Vue ({
 
     enterText: function(e){
 
+      var myThis = this;
+
       if(e.which == 13 && this.newText != null ){
 
         this.contacts[this.indexContact].messages.push({date: '10/01/2020 16:15:22',
@@ -124,16 +126,16 @@ var app = new Vue ({
 
         this.newText = null;
 
-        setTimeout( function(){
+        setTimeout(function(){
 
+          myThis.contacts[myThis.indexContact].messages.push({date: '10/01/2020 16:15:22',
+          message: 'ok',
+          status: 'received'});
 
-          console.log(this);
-
-        }, 1000)
-
-
-
+        }, 1000);
       }
+
+
 
     },
 
