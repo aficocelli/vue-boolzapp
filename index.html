@@ -92,7 +92,7 @@
           <!-- contacts box -->
           <div class="contacts-box">
             <ul>
-              <li @click="indexContact = index" v-for="(item, index) in contacts">
+              <li @click="indexContact = index" v-for="(item, index) in contacts" :class="indexContact == index? 'active' : ''">
                 <img :src=" 'img/avatar' + item.avatar + '.jpg'" alt="user photo">
                 <span>{{contacts[index].name}}</span>
               </li>
@@ -161,7 +161,7 @@
           <!-- input footer -->
           <div class="input-footer flex-el">
             <i class="far fa-smile"></i>
-            <input type="text" placeholder="Scrivi un messaggio">
+            <input type="text" placeholder="Scrivi un messaggio" v-model="newText">
             <i class="fas fa-microphone"></i>
           </div>
           <!-- /input footer -->

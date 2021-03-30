@@ -105,7 +105,9 @@ var app = new Vue ({
 
     ],
 
-    indexContact: 0
+    indexContact: 0,
+
+    newText: null
 
 
 
@@ -113,7 +115,15 @@ var app = new Vue ({
 
   methods: {
 
-
+    // enterText: function(e){
+    //
+    //   if(e.which == 13 ){
+    //
+    //     this.contacts.push(this.newText);
+    //   }
+    //
+    //
+    // }
 
 
   }
