@@ -120,22 +120,33 @@ var app = new Vue ({
 
       if(e.which == 13 && this.newText != null ){
 
-        this.contacts[this.indexContact].messages.push({date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
-        message: this.newText,
-        status: 'sent'});
+        this.contacts[this.indexContact]
+          .messages
+          .push({
+
+            date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+            message: this.newText,
+            status: 'sent'
+
+          });
 
         this.newText = null;
 
-        setTimeout(function(){
+        setTimeout (function(){
 
-          myThis.contacts[myThis.indexContact].messages.push({date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
-          message: 'ok',
-          status: 'received'});
+          myThis.contacts[myThis.indexContact]
+            .messages
+            .push({
+
+              date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+              message: 'ok',
+              status: 'received'
+
+            });
 
         }, 1000);
+
       }
-
-
 
     },
 
