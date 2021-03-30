@@ -124,16 +124,15 @@ var app = new Vue ({
 
         this.newText = null;
 
-        // setTimeout(
-        //   function(contacts){
-        //
-        //
-        //     console.log(contacts);
-        //
-        //
-        //   }), 1000
-        //
-        // }
+        setTimeout( function(){
+
+
+          console.log(this);
+
+        }, 1000)
+
+
+
       }
 
     },
