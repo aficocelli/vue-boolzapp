@@ -227,6 +227,8 @@ body{
   display:flex;
   align-items:center;
   font-size:14px;
+  word-break: break-word;
+
 }
 .data-mex{
   font-size:10px;
