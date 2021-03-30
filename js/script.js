@@ -115,15 +115,19 @@ var app = new Vue ({
 
   methods: {
 
-    // enterText: function(e){
-    //
-    //   if(e.which == 13 ){
-    //
-    //     this.contacts.push(this.newText);
-    //   }
-    //
-    //
-    // }
+    enterText: function(e){
+
+      if(e.which == 13 ){
+
+        this.contacts[this.indexContact].messages.push({date: '10/01/2020 16:15:22',
+        message: this.newText,
+        status: 'sent'});
+
+        this.newText = null;
+      }
+
+
+    }
 
 
   }
