@@ -161,7 +161,7 @@
           <!-- input footer -->
           <div class="input-footer flex-el">
             <i class="far fa-smile"></i>
-            <input type="text" placeholder="Scrivi un messaggio" v-model="newText" @keyup="enterText">
+            <input type="text" placeholder="Scrivi un messaggio" v-model="newText" v-on:keyup.enter="enterText">
             <i class="fas fa-microphone"></i>
           </div>
           <!-- /input footer -->
