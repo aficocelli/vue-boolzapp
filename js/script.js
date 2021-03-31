@@ -118,16 +118,14 @@ var app = new Vue ({
 
       var myThis = this;
 
-      if(e.which == 13 && this.newText != null ){
+      if( this.newText != null ){
 
         this.contacts[this.indexContact]
           .messages
           .push({
-
             date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
             message: this.newText,
             status: 'sent'
-
           });
 
         this.newText = null;
@@ -137,11 +135,9 @@ var app = new Vue ({
           myThis.contacts[myThis.indexContact]
             .messages
             .push({
-
               date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
               message: 'ok',
               status: 'received'
-
             });
 
         }, 1000);
