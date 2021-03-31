@@ -156,10 +156,11 @@ var app = new Vue ({
 
       return this.contacts.filter((item, index)=>{
 
-        
+
 
         return item.name.toLowerCase().match(this.search.toLowerCase());
 
+        
       });
 
 

@@ -143,7 +143,7 @@
 
           <!-- text messages -->
           <div class="text-mex flex-el">
-            <div class="speech-balloon" v-for="(item, i) in contacts[this.indexContact].messages" :class="item.status == 'sent'? 'send-mex' : 'received-mex' ">
+            <div class="speech-balloon" v-for="(item, i) in contacts[indexContact].messages" :class="item.status == 'sent'? 'send-mex' : 'received-mex' ">
               <p>{{item.message}}</p>
               <p class="data-mex">{{item.date}}</p>
             </div>
