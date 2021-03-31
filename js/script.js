@@ -109,7 +109,7 @@ var app = new Vue ({
 
     newText: null,
 
-    search:null,
+    search:"",
 
   },
 
@@ -147,14 +147,37 @@ var app = new Vue ({
 
     },
 
-    searchText: function(){
 
-
-      console.log(this.search);
-
-    }
   },
 
+  computed:{
+
+    filterMex: function(){
+
+      return this.contacts.filter((item)=>{
+
+
+        return item.name.toLowerCase().match(this.search.toLowerCase());
+
+
+      });
+
+
+    },
+
+    filterText: function(){
+
+      return this.contacts[this.indexContact].messages.filter((item)=>{
+
+        return item.message.toLowerCase().match(this.search.toLowerCase());
+        
+      });
+
+
+    }
+
+
+  }
 
 
 

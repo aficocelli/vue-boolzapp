@@ -79,7 +79,7 @@
                 <div class="search-box">
                 <i class="fas fa-search"></i>
                 </div>
-                <input type="text" name="" value="" placeholder="Cerca o inizia una nuova chat" v-model="search" v-on:keyup.enter="searchText">
+                <input type="text" name="" value="" placeholder="Cerca o inizia una nuova chat" v-model="search">
                 </label>
               </div>
 
@@ -92,7 +92,7 @@
           <!-- contacts box -->
           <div class="contacts-box">
             <ul>
-              <li @click="indexContact = index" v-for="(item, index) in contacts" :class="indexContact == index? 'active' : ''">
+              <li @click="indexContact = index" v-for="(item, index) in filterMex" :class="indexContact == index? 'active' : ''">
                 <img :src=" 'img/avatar' + item.avatar + '.jpg'" alt="user photo">
                 <span>{{item.name}}</span>
               </li>
@@ -143,7 +143,7 @@
 
           <!-- text messages -->
           <div class="text-mex flex-el">
-            <div class="speech-balloon" v-for="(item, i) in contacts[indexContact].messages" :class="item.status == 'sent'? 'send-mex' : 'received-mex' ">
+            <div class="speech-balloon" v-for="(item, i) in filterText" :class="item.status == 'sent'? 'send-mex' : 'received-mex' ">
               <p>{{item.message}}</p>
               <p class="data-mex">{{item.date}}</p>
             </div>
