@@ -154,27 +154,27 @@ var app = new Vue ({
 
     filterMex: function(){
 
-      return this.contacts.filter((item)=>{
+      return this.contacts.filter((item, index)=>{
 
+        
 
         return item.name.toLowerCase().match(this.search.toLowerCase());
-
 
       });
 
 
     },
 
-    filterText: function(){
-
-      return this.contacts[this.indexContact].messages.filter((item)=>{
-
-        return item.message.toLowerCase().match(this.search.toLowerCase());
-        
-      });
-
-
-    }
+    // filterText: function(){
+    //
+    //   return this.contacts[this.indexContact].messages.filter((item)=>{
+    //
+    //     return item.message.toLowerCase().match(this.search.toLowerCase());
+    //
+    //   });
+    //
+    //
+    // }
 
 
   }
