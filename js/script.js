@@ -109,16 +109,17 @@ var app = new Vue ({
 
     newText: null,
 
+    search:null,
 
   },
 
   methods: {
 
-    enterText: function(e){
+    enterText: function(){
 
       var myThis = this;
 
-      if( this.newText != null ){
+      if(this.newText != null ){
 
         this.contacts[this.indexContact]
           .messages
@@ -146,7 +147,34 @@ var app = new Vue ({
 
     },
 
-  }
+    searchText: function(){
+
+
+      console.log(this.search);
+
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
