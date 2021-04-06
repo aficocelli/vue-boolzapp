@@ -25,7 +25,9 @@ body{
   background-color:#fff;
   align-self:flex-start;
 }
-
+#no-result{
+  text-align: center;
+}
 /* /MIX */
 
 /* layout container and main box */
