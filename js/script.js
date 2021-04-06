@@ -31,7 +31,7 @@ var app = new Vue ({
             status: 'received'
           }
         ],
-
+        id: 1
       },
       {
         name: 'Fabio',
@@ -57,6 +57,7 @@ var app = new Vue ({
             status: 'received'
           }
         ],
+        id:2
       },
       {
         name: 'Samuele',
@@ -82,6 +83,7 @@ var app = new Vue ({
             status: 'received'
           }
         ],
+        id:3
       },
       {
         name: 'Luisa',
@@ -101,6 +103,7 @@ var app = new Vue ({
             status: 'received'
           }
         ],
+        id:4
       }
 
     ],
@@ -109,46 +112,52 @@ var app = new Vue ({
 
     newText: null,
 
-    search:"",
+    search:""
 
   },
 
   methods: {
 
-    enterText: function(){
+    // enterText: function(){
+    //
+    //   var myThis = this;
+    //
+    //   if(this.newText != null ){
+    //
+    //     this.contacts[this.indexContact]
+    //       .messages
+    //       .push({
+    //         date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+    //         message: this.newText,
+    //         status: 'sent'
+    //       });
+    //
+    //     this.newText = null;
+    //
+    //     setTimeout (function(){
+    //
+    //       myThis.contacts[myThis.indexContact]
+    //         .messages
+    //         .push({
+    //           date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
+    //           message: 'ok',
+    //           status: 'received'
+    //         });
+    //
+    //     }, 1000);
+    //
+    //   }
+    //
+    // },
 
-      var myThis = this;
-
-      if(this.newText != null ){
-
-        this.contacts[this.indexContact]
-          .messages
-          .push({
-            date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
-            message: this.newText,
-            status: 'sent'
-          });
-
-        this.newText = null;
-
-        setTimeout (function(){
-
-          myThis.contacts[myThis.indexContact]
-            .messages
-            .push({
-              date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
-              message: 'ok',
-              status: 'received'
-            });
-
-        }, 1000);
-
-      }
-
-    },
-
-
+    searchIndex: function(id){
+      this.indexContact = this.contacts.findIndex(function(item){
+        return item.id == id;
+      });
+    }
   },
+
+
 
   computed:{
 
@@ -157,10 +166,10 @@ var app = new Vue ({
       return this.contacts.filter((item, index)=>{
 
 
-
         return item.name.toLowerCase().match(this.search.toLowerCase());
 
-        
+
+
       });
 
 
@@ -170,7 +179,7 @@ var app = new Vue ({
     //
     //   return this.contacts[this.indexContact].messages.filter((item)=>{
     //
-    //     return item.message.toLowerCase().match(this.search.toLowerCase());
+    //     return item.message.toLowerCase().match(this.searchText.toLowerCase());
     //
     //   });
     //

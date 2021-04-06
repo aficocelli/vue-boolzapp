@@ -92,7 +92,7 @@
           <!-- contacts box -->
           <div class="contacts-box">
             <ul>
-              <li @click="indexContact = index" v-for="(item, index) in filterMex" :class="indexContact == index? 'active' : ''">
+              <li @click="searchIndex(item.id)" v-for="(item, index) in filterMex" :key="item.id" :class="indexContact == index? 'active' : ''">
                 <img :src=" 'img/avatar' + item.avatar + '.jpg'" alt="user photo">
                 <span>{{item.name}}</span>
               </li>
